@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: $clr1;
+    color: $clr6;
+}
+
+html {
+    // font-family: "montserrat", sans-serif;
+    
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.App{
+    width: 1440px;
+    @media (max-width: $mobile-breakpoint) {
+        width: 375px;
+    }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    // font-family: caveat, serif;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0 ;
+  
+}
+
+p {
+    margin: 0 0 0em;
+}
+button {
+    cursor: pointer;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+input,
+textarea {
+    width: 200px;
+    outline: none;
+}
+
+input,
+select {
+    padding: 5px;
+    padding-left: none;
+    border: unset;
+    background: unset;
+    border-bottom: 1px solid black;
+}
+
+textarea {
+    height: 75px;
+}
+
+//scrool
+
+::-webkit-scrollbar {
+    width: 10px;
+    @media (max-width: 500px) {
+        width: 4px;
+    }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    // background: rgb(17, 17, 17);
+    background:black;
+    border-bottom-left-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #d1d2d3;
+    width: 10px;
+}

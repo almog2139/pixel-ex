@@ -1,0 +1,49 @@
+.reserve{
+    background-image: url("../../imgs/ready-bg-desktop.jpg");
+    background-repeat: no-repeat;
+    height: 240px;
+    background-size: contain;
+    @media (max-width: $mobile-breakpoint) {
+        background-image: url("../../imgs/ready-bg-mobile.jpg");
+        height: 328px;
+        flex-direction: column;
+    }
+    p{
+        margin-top: 99px;
+        margin-bottom: 88px ;
+        font-size: 40px;
+        font-family: Spartan-Bold;
+        color: white;
+        margin-left: 167px;
+        margin-right: 349px;
+        @media (max-width: $mobile-breakpoint) {
+            margin-top: 85px;
+            margin-bottom: 34px;
+            margin-right: 73px;
+            margin-left: 73px;
+            font-size: 32px;
+            
+        }
+    }
+    button{
+        
+        margin-top: 99px;
+        margin-bottom: 88px ;
+        margin-right: 165px;
+        width: 245px;
+        height: 65px;
+        background-color: unset;
+        color: white;
+        border: 1px solid white;
+        font-size: 14px;
+        font-family: Spartan-SemiBold;
+        @media (max-width: $mobile-breakpoint) {
+            // margin-top: 85px;
+            // margin-bottom: 34px;
+            margin-right: 73px;
+            margin-left: 73px;
+            margin-bottom: 80px;
+            margin-top: unset;
+        }
+    }
+}

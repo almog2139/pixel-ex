@@ -1,0 +1,104 @@
+.hero {
+    height: 820px;
+    @media (max-width: $mobile-breakpoint) {
+        height: 748px;
+       
+        flex-direction: column-reverse;
+        .hero-bg-mobile{
+            display: block;
+            width: 375px;
+            height: 100%;
+        }
+    }
+    .hero-text {
+        @media (max-width: $mobile-breakpoint) {
+            width: 375px;
+            height: 484px;
+        }
+    
+        background-color: #111111d9;
+        width: 519px;
+        
+        & > * {
+            margin-left: 166px;
+        z-index: 3;
+        }
+        .logo {
+            width: 104px;
+            height: 40px;
+            margin-top: 65px;
+            margin-bottom: 169px;
+            @media (max-width: $mobile-breakpoint) {
+                width: 84px;
+                height: 32px;
+                margin-top: 12px;
+                margin-bottom: 39px;
+                margin: auto;
+                
+            }
+            
+        }
+        span {
+            @media (max-width: $mobile-breakpoint) {
+                width: 209px;
+                height: 65px;
+                font-size: 32px;
+                margin-left: 83px;
+                margin-right: 83px;
+                margin-bottom: 36px;
+              
+            }
+            width: 419px;
+            height: 121px;
+            font-family: Spartan-Light;
+            font-size: 59px;
+            color: white;
+            margin-bottom: 31px;
+            
+        }
+        p {
+            font-family: Spartan-Regular;
+            font-size: 18px;
+            color: white;
+            margin-top: 33px;
+            width: 439px;
+            height: 75px;
+            @media (max-width: $mobile-breakpoint) {
+                width: 326px;
+                height: 62px;
+                margin-top: 45px;
+                margin: auto;
+                margin-bottom: 68px;
+                
+            }
+        }
+        button {
+            margin-top: 55px;
+            font-family: Spartan-SemiBold;
+            font-size: 14px;
+            background-color: white;
+            color: black;
+            width: 245px;
+            height: 64px;
+            @media (max-width: $mobile-breakpoint) {
+                background-color: unset;
+                width: 245px;
+                height: 64px;
+                margin-top: 64px;
+                margin: auto;
+                color: white;
+                border:2px solid white;
+                margin-bottom: 80px;
+            }
+        }
+    }
+    .hero-bg{
+        object-fit: cover;
+        height:100%;
+        width: 920px;
+        @media (max-width: $mobile-breakpoint) {
+            display: none;
+      
+        }
+    }
+}

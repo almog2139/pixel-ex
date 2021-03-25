@@ -1,0 +1,151 @@
+.main {
+    height: 1400px;
+    .enjoyableDesktop {
+        width: 541px;
+        height: 720px;
+        z-index: 6;
+        margin-left: 164px;
+        position: absolute;
+        top: 750px;
+        @media (max-width: $mobile-breakpoint) {
+            width: 327px;
+            height: 400px;
+            z-index: 5;
+            position: absolute;
+            top: 699px;
+            margin-left: 24px;
+            margin-right: 24px;
+           
+
+        }
+    }
+    .div-img-bg {
+        background-image: url("../../imgs/div-bg.png");
+        background-repeat: no-repeat;
+        width: 895px;
+        height: 321px;
+        background-size: contain;
+        @media (max-width: $mobile-breakpoint) {
+            display: none;
+        }
+        &.left {
+            margin-top: 300px;
+        }
+        &.right {
+            position: relative;
+            left: 0%;
+            bottom: -84%;
+        }
+    }
+    .patternDivide {
+        width: 72px;
+        height: 8px;
+        margin-bottom: 56px;
+        &.right {
+            margin-top: 76px;
+        }
+        &.left {
+            margin-top: 326px;
+        }
+        @media (max-width: $mobile-breakpoint) {
+            margin-bottom: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+       
+    }
+    .locallyDesktop {
+        width: 541px;
+        height: 720px;
+        position: absolute;
+        left: 800px;
+        /* right: 0; */
+        z-index: 3;
+        top: 1582px;
+        @media (max-width: $mobile-breakpoint) {
+            width: 327px;
+            height: 400px;
+            left: 24px;
+            top: 1442px
+
+        }
+    }
+    .main-title {
+        width: 285px;
+        height: 95px;
+        color: black;
+        font-size: 40px;
+        font-family: Spartan-Bold;
+        @media (max-width: $mobile-breakpoint){
+            width: 229px;
+            height: 71px;
+            font-size: 32px;
+            text-align: center;
+            margin: auto;
+
+        }
+    }
+    .main-desc {
+        width: 426px;
+        height: 79px;
+        font-family: Spartan-Regular;
+        font-size: 18px;
+        color: black;
+        margin-top: 37px;
+        @media (max-width: $mobile-breakpoint){
+            width:307px ;
+            height: 65px;
+            margin-top: 22px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+       
+    }
+    .patternLines {
+      
+        width: 152px;
+        height: 78px;
+        position: absolute;
+        left: 1277px;
+        top: 1800px;
+        z-index: 5;
+        @media (max-width: $mobile-breakpoint) {
+            display: none;
+        }
+    }
+    .main-tetx {
+        &.right {
+            // margin-left: 125px;
+            // margin-right: 200px;
+            position: relative;
+            z-index: 4;
+            left: -6%;
+            margin-top: 72px;
+            @media (max-width: $mobile-breakpoint) {
+    
+            top: 233px;
+            left: unset;
+            top: 233px;
+            margin-left: unset;
+            }
+        }
+        &.left {
+            margin-left: 165px;
+            position: relative;
+            left: 3%;
+            @media (max-width: $mobile-breakpoint) {
+                margin-left: auto;
+                margin-right: auto;
+                top: 462px;
+                left: unset;
+            }
+        }
+    }
+    .section{
+        
+        @media (max-width: $mobile-breakpoint) {
+           flex-direction: column;
+        }
+    }
+    
+}

@@ -1,0 +1,70 @@
+.main-container {
+    display: grid;
+    grid-template-columns: 
+    minmax(1.6rem, 1fr)
+    minmax(auto, $normal-breakpoint)
+    minmax(1.6rem, 1fr)
+    ;
+
+    & > * {
+        grid-column: 2;
+    }
+
+    @include for-narrow-layout {
+        grid-template-columns: 
+        minmax(1.6rem, 1fr)
+        minmax(auto, $mobile-breakpoint)
+        minmax(1.6rem, 1fr)
+        ;  
+    }
+
+    @include for-normal-layout {
+        grid-template-columns: 
+        minmax(1.6rem, 1fr)
+        minmax(auto, $narrow-breakpoint)
+        minmax(1.6rem, 1fr)
+        ;  
+    }
+
+    @include for-wide-layout {
+        grid-template-columns: 
+        minmax(1.6rem, 1fr)
+        minmax(auto, $normal-breakpoint)
+        minmax(1.6rem, 1fr)
+        ;  
+    }
+}
+
+// Main Header Layout
+
+  
+    .card-continer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    align-content: center;
+    justify-items: center;
+    margin: auto;
+}
+
+.card-grid {
+  
+    padding: 12px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s;
+    display: inline-block;
+    vertical-align: top;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        .active-btn{
+            display: inline-block;
+           
+        }
+    }
+}
